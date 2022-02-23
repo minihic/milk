@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,40 @@
     <title>Dummed</title>
 </head>
 <style>
-    :root {
-    background: linear-gradient(47deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
-    background-size: 200% 200%;
-    animation: gradient 25s ease infinite;
+    * {
+        margin: 0;
+        padding: 0;
     }
+
+    :root {
+        background: linear-gradient(47deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+        background-size: 200% 200%;
+        animation: gradient 25s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
     body {
         display: flex;
         justify-content: center;
-        align-items: center;
+        margin: auto;
     }
 </style>
+
 <body>
-    <div ><img src="/image/milk.png" alt="milk" width="500" height="500"></div>
+    <div class="milk"><img src="/image/milk.png" alt="milk" width="700" height="700"></div>
 </body>
+
 </html>
